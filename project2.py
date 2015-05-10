@@ -8,7 +8,6 @@ from graphics import *
 wSize = 600
 allLocs = []
 
-
 def main():
     # controls the flow of the program, allows the players to put their pieces and then move them,
     # alternately, if a mill is made, invites the player to remove opponents piece and decides which
