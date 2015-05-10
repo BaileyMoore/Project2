@@ -1,10 +1,9 @@
 # CITS1401 Semester 1 2015, Project 2
-# Student 1 Name:                       Student no:
-# Student 2 Name:                       Student no:
+# Student 1 Name: Bailey Moore  Student no:
+# Student 2 Name: Samuel Heath  Student no: 21725083
 # Twelve Men's Morris
 
 from graphics import *
-
 
 wSize = 600
 allLocs = []
@@ -26,7 +25,6 @@ def blocked(Occup, unOccup):
     # Occup is a list of occupied points/locations by a Player and unOccup are free locations
     # returns True if all pieces of the Player are blocked otherwise False
     return False
-            
     
 def movePiece(win,ptList,cColor,Player,Occup,linesOccup,Circles,unOccup):
     # this function performs a valid move for a Player (1 or 2) and updates the relevant lists
@@ -35,8 +33,6 @@ def movePiece(win,ptList,cColor,Player,Occup,linesOccup,Circles,unOccup):
     # Occup is a list of occupied locations by the Player, linesOccup is a list of lines (mills)
     # of the Player, Circles is a list of the circles (pieces) and unOccup is a list of unOccup locations
     return [] # does not return anything
-
-
 
 def drawBoard(win):
     # draws the board and populates the gobal list allLocs[] which contains all valid locations in ptList
@@ -62,27 +58,22 @@ def drawBoard(win):
         ll.draw(win)
     return ptList 
 
-
-
 def findNN(pt, ptList):
     # finds the nearest location to a point pt in ptList so that the user is only required
     # to click near the location to place/select/move a piece and not exactly on top of it
     # returns the distance d and index location nn in ptList of the nearest point
     return nn, d
-
-
+    
 def isLine(Occup, linesOccup):
     # Occup is a list of occupied locations by a Player and linesOccup are the Player's mills
     # returns True if a line (mill) has been made with the last move and updates linesOccup (mills)
     # otherwise returns False
     return False
-   
-    
+  
 def removePiece(win,ptList,Player,Occup,unOccup,linesOccup,Circles):
     # performs the removal of a piece as per the game rules
     # and updates Occup, unOccup and Circles lists
     return [] # does not return anything
-
 
 def AImove(win,ptList,cColor,Player,Occup,linesOccup,Circles,unOccup):
     # optional function for extra marks
