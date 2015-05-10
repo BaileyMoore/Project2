@@ -19,7 +19,6 @@ def main():
     print(len(ptList), len(ptList[0]))
     print(allLocs)
 
-
 def blocked(Occup, unOccup):
     # Occup is a list of occupied points/locations by a Player and unOccup are free locations
     # returns True if all pieces of the Player are blocked otherwise False
