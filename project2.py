@@ -1,9 +1,9 @@
 # CITS1401 Semester 1 2015, Project 2
-# Student 1 Name: Bailey Moore  Student no:
+# Student 1 Name: Bailey Moore  Student no: 21714066
 # Student 2 Name: Samuel Heath  Student no: 21725083
 # Twelve Men's Morris
 
-from graphics import *
+from graphics import Point, Circle
 
 wSize = 600
 allLocs = []
@@ -12,6 +12,13 @@ def main():
     # controls the flow of the program, allows the players to put their pieces and then move them,
     # alternately, if a mill is made, invites the player to remove opponents piece and decides which
     # player has won. Uses the random function for Player 2 (the computer)
+    P1 = []
+    P2= []
+    corganise= 0 #this accumulator will increase/decrease in the loop, modifying the circle's positions to line up beside
+                 #the board at the start of the game
+    for i in range(1, 13):
+        P1.append(Circle(circleorganiser, 20)
+        P2.append(Circle(circleorganiser, circleorganiser
     win = GraphWin('QAT',wSize,wSize)
     win.setBackground('green')
     win.setCoords(0,0,wSize,wSize)
@@ -22,6 +29,8 @@ def main():
 def blocked(Occup, unOccup):
     # Occup is a list of occupied points/locations by a Player and unOccup are free locations
     # returns True if all pieces of the Player are blocked otherwise False
+    
+        
     return False
     
 def movePiece(win,ptList,cColor,Player,Occup,linesOccup,Circles,unOccup):
