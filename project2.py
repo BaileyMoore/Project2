@@ -8,7 +8,6 @@ from graphics import *
 wSize = 600
 allLocs = []
 
-
 def main():
     # controls the flow of the program, allows the players to put their pieces and then move them,
     # alternately, if a mill is made, invites the player to remove opponents piece and decides which
@@ -17,9 +16,8 @@ def main():
     win.setBackground('green')
     win.setCoords(0,0,wSize,wSize)
     ptList = drawBoard(win)
-    print(len(ptList), len(ptList[0]))
+    print(len(ptList), 'x', len(ptList[0]), "=", len(ptList)*len(ptList[0]))
     print(allLocs)
-
 
 def blocked(Occup, unOccup):
     # Occup is a list of occupied points/locations by a Player and unOccup are free locations
