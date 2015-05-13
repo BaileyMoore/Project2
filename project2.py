@@ -16,9 +16,14 @@ def main():
     P2= []
     corganise= 0 #this accumulator will increase/decrease in the loop, modifying the circle's positions to line up beside
                  #the board at the start of the game
+    p1point = Point(50, corganise)
+    p2point = Point(550, corganise)
     for i in range(1, 13):
-        P1.append(Circle(circleorganiser, 20)
-        P2.append(Circle(circleorganiser, circleorganiser
+        P1.append(Circle(p1point, 20)
+        P2.append(Circle(p2point, 20)
+        corganise = corganise - 50
+        P1[i].draw
+        P2[i].draw
     win = GraphWin('QAT',wSize,wSize)
     win.setBackground('green')
     win.setCoords(0,0,wSize,wSize)
